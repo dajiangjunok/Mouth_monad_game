@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "mouthGame/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/mouthGame/$1"
+    }
+  ]
+}
