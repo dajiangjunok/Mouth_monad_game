@@ -1,0 +1,23 @@
+{
+  "name": "@mouth/contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Mouth Game NFT",
+  "private": true,
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "deploy": "forge script script/DeployMouthGameNFT.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast",
+    "deploy:testnet": "forge script script/DeployMouthGameNFT.s.sol --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast --verify",
+    "lint": "forge fmt --check",
+    "format": "forge fmt",
+    "clean": "forge clean"
+  },
+  "keywords": [
+    "solidity",
+    "foundry",
+    "smart-contracts",
+    "nft",
+    "ethereum"
+  ],
+  "license": "MIT"
+}

@@ -1,7 +1,8 @@
 {
+  "version": 2,
   "builds": [
     {
-      "src": "mouthGame/**",
+      "src": "packages/game/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -11,7 +12,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/mouthGame/$1"
+      "dest": "/packages/game/dist/$1"
     }
-  ]
+  ],
+  "installCommand": "npm install",
+  "buildCommand": "npm run game:build",
+  "outputDirectory": "packages/game/dist",
+  "framework": "vite"
 }

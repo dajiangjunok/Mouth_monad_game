@@ -37,59 +37,63 @@ pids
 .env.production.local
 
 # ==========================================
-# Smart Contract (mouthContract) - Foundry/Forge
+# Monorepo - Node.js dependencies
+# ==========================================
+node_modules/
+*/node_modules/
+
+# ==========================================
+# Smart Contract (packages/contracts) - Foundry/Forge
 # ==========================================
 
 # Foundry/Forge build artifacts
-mouthContract/out/
-mouthContract/cache/
-mouthContract/broadcast/
-mouthContract/lib/
+packages/contracts/out/
+packages/contracts/cache/
+packages/contracts/broadcast/
+packages/contracts/lib/
 
 # Foundry/Forge deployment files (optional - you may want to commit some of these)
-mouthContract/deployments/
-mouthContract/flattened/
+packages/contracts/deployments/
+packages/contracts/flattened/
 
 # ==========================================
-# Frontend (mouthGame) - React/Vite/Node.js
+# Frontend (packages/game) - React/Vite/Node.js
 # ==========================================
-
-# Dependencies
-mouthGame/node_modules/
-mouthGame/.pnp
-mouthGame/.pnp.js
 
 # Production builds
-mouthGame/dist/
-mouthGame/build/
+packages/game/dist/
+packages/game/build/
 
 # Vite cache
-mouthGame/.vite/
+packages/game/.vite/
 
 # ESLint cache
-mouthGame/.eslintcache
+packages/game/.eslintcache
 
 # Optional npm cache directory
-mouthGame/.npm
+packages/game/.npm
 
 # Optional REPL history
-mouthGame/.node_repl_history
+packages/game/.node_repl_history
 
 # Output of 'npm pack'
-mouthGame/*.tgz
+packages/game/*.tgz
 
 # Yarn Integrity file
-mouthGame/.yarn-integrity
+packages/game/.yarn-integrity
 
 # Coverage directory used by tools like istanbul
-mouthGame/coverage/
-mouthGame/*.lcov
+packages/game/coverage/
+packages/game/*.lcov
 
 # Local Netlify folder
-mouthGame/.netlify
+packages/game/.netlify
 
 # Stores VSCode versions used for testing VSCode extensions
-mouthGame/.vscode-test
+packages/game/.vscode-test
+
+# Vercel
+.vercel
 
 # ==========================================
 # Temporary and test files
