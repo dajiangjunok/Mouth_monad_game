@@ -1,22 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "packages/game/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/packages/game/dist/$1"
-    }
-  ],
-  "installCommand": "npm install",
-  "buildCommand": "npm run game:build",
+  "buildCommand": "npm run build --workspace=@mouth/game",
   "outputDirectory": "packages/game/dist",
-  "framework": "vite"
+  "installCommand": "npm install"
 }
